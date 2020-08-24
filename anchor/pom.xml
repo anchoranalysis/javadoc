@@ -1,0 +1,135 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.anchoranalysis</groupId>
+    <artifactId>anchor-javadoc</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>Aggregator project for generating javadocs</name>
+	
+	<properties>
+        <path.anchor>../../anchor</path.anchor>
+    </properties>
+	
+	<modules>
+        <module>${path.anchor}/anchor-core</module>
+        <module>${path.anchor}/anchor-bean</module>
+        <module>${path.anchor}/anchor-beans-shared</module>
+        <module>${path.anchor}/anchor-annotation</module>
+        <module>${path.anchor}/anchor-image</module>
+        <module>${path.anchor}/anchor-math</module>
+        <module>${path.anchor}/anchor-overlay</module>
+        <module>${path.anchor}/anchor-io</module>
+	<module>${path.anchor}/anchor-io-manifest</module>
+	<module>${path.anchor}/anchor-io-output</module>
+	<module>${path.anchor}/anchor-io-generator</module>
+        <module>${path.anchor}/anchor-feature</module>
+		<module>${path.anchor}/anchor-feature-session</module>
+        <module>${path.anchor}/anchor-image-bean</module>
+        <module>${path.anchor}/anchor-image-feature</module>
+        <module>${path.anchor}/anchor-mpp</module>
+        <module>${path.anchor}/anchor-mpp-feature</module>
+        <module>${path.anchor}/anchor-experiment</module>
+        <module>${path.anchor}/anchor-feature-io</module>
+        <module>${path.anchor}/anchor-image-io</module>
+        <module>${path.anchor}/anchor-mpp-io</module>
+        <module>${path.anchor}/anchor-mpp-sgmn</module>
+        <module>${path.anchor}/anchor-image-experiment</module>
+        <module>${path.anchor}/anchor-mpp-plot</module>
+        <module>${path.anchor}/anchor-plot</module>
+	<module>${path.anchor}/anchor-annotation-io</module>
+	   <module>${path.anchor}/anchor-io-bioformats</module>
+	   <module>${path.anchor}/anchor-io-ij</module>
+		<module>${path.anchor}/anchor-test</module>
+		<module>${path.anchor}/anchor-test-feature</module>
+		<module>${path.anchor}/anchor-test-image</module>
+    </modules>
+    
+    	<build>
+	    
+		<plugins>
+			
+		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.9.1</version>
+				<configuration>
+				</configuration>
+			</plugin>	
+            
+    </plugins>
+    </build>
+    
+    
+    <reporting>
+		<plugins>
+                
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+				<!-- Use the delomboked output as the base for the javadocs -->
+        			
+					<source>1.8</source>
+					<detectJavaApiLink>true</detectJavaApiLink>
+					<noqualifier>org.anchoranalysis.*:java.lang:java.io</noqualifier>
+					<sourcepath>
+						${path.anchor}/anchor-annotation/target/delombok;
+						${path.anchor}/anchor-annotation-io/target/delombok;
+						${path.anchor}/anchor-bean/target/delombok;
+						${path.anchor}/anchor-beans-shared/target/delombok;
+						${path.anchor}/anchor-core/target/delombok;
+						${path.anchor}/anchor-experiment/target/delombok;
+						${path.anchor}/anchor-core/target/delombok;
+						${path.anchor}/anchor-feature/target/delombok;
+						${path.anchor}/anchor-feature-io/target/delombok;
+						${path.anchor}/anchor-feature-session/target/delombok;
+						${path.anchor}/anchor-image/target/delombok;
+						${path.anchor}/anchor-image-bean/target/delombok;
+						${path.anchor}/anchor-image-experiment/target/delombok;
+						${path.anchor}/anchor-image-feature/target/delombok;
+						${path.anchor}/anchor-image-io/target/delombok;
+						${path.anchor}/anchor-io/target/delombok;
+						${path.anchor}/anchor-io-bioformats/target/delombok;
+						${path.anchor}/anchor-io-generator/target/delombok;
+						${path.anchor}/anchor-io-ij/target/delombok;
+						${path.anchor}/anchor-io-manifest/target/delombok;
+						${path.anchor}/anchor-io-output/target/delombok;
+						${path.anchor}/anchor-math/target/delombok;
+						${path.anchor}/anchor-mpp/target/delombok;
+						${path.anchor}/anchor-mpp-feature/target/delombok;
+						${path.anchor}/anchor-mpp-io/target/delombok;
+						${path.anchor}/anchor-mpp-plot/target/delombok;
+						${path.anchor}/anchor-mpp-sgmn/target/delombok;						
+						${path.anchor}/anchor-overlay/target/delombok;
+						${path.anchor}/anchor-plot/target/delombok;
+						${path.anchor}/anchor-test/target/delombok;
+						${path.anchor}/anchor-test-feature/target/delombok;
+						${path.anchor}/anchor-test-image/target/delombok
+					</sourcepath>
+				</configuration>
+            <reportSets>
+                    <reportSet>
+                    <id>aggregate</id>
+
+                    <inherited>false</inherited>        
+                    <reports>
+                      <report>aggregate</report>
+                    </reports>
+                  </reportSet>
+                  <reportSet>
+                    <id>default</id>
+                    <reports>
+                      <report>javadoc</report>
+                    </reports>
+                    </reportSet>
+                </reportSets>
+			</plugin>
+	
+		</plugins>
+	</reporting>
+
+</project>
