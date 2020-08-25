@@ -19,6 +19,7 @@
         <path.anchor>../../anchor</path.anchor>
     </properties>
 	
+	<!-- All the modules from https://github.com/anchoranalysis/anchor -->
 	<modules>
         <module>${path.anchor}/anchor-core</module>
         <module>${path.anchor}/anchor-bean</module>
@@ -97,15 +98,6 @@
             </configuration>
           </execution>
     </executions>				
-				<!-- <reportSets>
-					<reportSet>
-						<id>aggregate</id>
-						<reports>
-							<report>aggregate</report>
-						</reports>
-					</reportSet>
-				</reportSets>-->
-
 				
 				<configuration>
 				 	<!-- Use the delomboked output as the base for the javadocs -->
@@ -113,14 +105,7 @@
 					<source>1.8</source>
 					<detectJavaApiLink>true</detectJavaApiLink>
 			        <noqualifier>org.anchoranalysis.*:java.lang:java.io</noqualifier>
-<!--			        <links>
-			            <link>https://www.anchoranalysis.org/developer_guide_repositories_overview.html</link>
-			        </links>-->
-				
 					<skip>false</skip>
-				
-					<!--  Disable the lint as it's very over-sensitive -->
-					<!--<additionalparam>-Xdoclint:none</additionalparam>-->
 				</configuration>
 			</plugin>
 						
@@ -136,7 +121,7 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>2.9.1</version>
 				<configuration>
-				<!-- Use the delomboked output as the base for the javadocs -->
+				<!-- As we wish to run Javadoc on delombokked source, this creates a problem for javadoc:aggregator, so as a workaround we simply include all the source-paths -->
         			
 					<source>1.8</source>
 					<detectJavaApiLink>true</detectJavaApiLink>
