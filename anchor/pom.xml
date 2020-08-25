@@ -3,6 +3,12 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+        <groupId>org.anchoranalysis.anchor</groupId>
+   	    <artifactId>anchor-pom</artifactId>
+		<version>0.0.16-SNAPSHOT</version>
+    </parent> 
+	
     <groupId>org.anchoranalysis</groupId>
     <artifactId>anchor-javadoc</artifactId>
     <version>1.0</version>
@@ -35,9 +41,8 @@
         <module>${path.anchor}/anchor-feature-io</module>
         <module>${path.anchor}/anchor-image-io</module>
         <module>${path.anchor}/anchor-mpp-io</module>
-        <module>${path.anchor}/anchor-mpp-sgmn</module>
+        <module>${path.anchor}/anchor-mpp-segment</module>
         <module>${path.anchor}/anchor-image-experiment</module>
-        <module>${path.anchor}/anchor-mpp-plot</module>
         <module>${path.anchor}/anchor-plot</module>
 	<module>${path.anchor}/anchor-annotation-io</module>
 	   <module>${path.anchor}/anchor-io-bioformats</module>
@@ -46,7 +51,7 @@
 		<module>${path.anchor}/anchor-test-feature</module>
 		<module>${path.anchor}/anchor-test-image</module>
     </modules>
-    
+	
     	<build>
 	    
 		<plugins>
@@ -59,6 +64,66 @@
 				</configuration>
 			</plugin>	
             
+	    <plugin>    
+	        <artifactId>maven-compiler-plugin</artifactId>
+	        <configuration>
+	            <source>1.8</source>
+	            <target>1.8</target>
+	        </configuration>
+	    </plugin>
+		
+		
+		      <!-- Second javadoc plugin definition -->
+		      <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.2.0</version>
+    <executions>
+            <execution>
+                    <id>attach-javadocs</id>
+                    <goals>
+                            <goal>aggregate</goal>
+                    </goals>
+            </execution>
+			          <execution>
+            <id>aggregate</id>
+            <goals>
+              <goal>aggregate</goal>
+            </goals>
+            <phase>site</phase>
+            <configuration>
+              <!-- Specific configuration for the aggregate report -->
+              ...
+            </configuration>
+          </execution>
+    </executions>				
+				<!-- <reportSets>
+					<reportSet>
+						<id>aggregate</id>
+						<reports>
+							<report>aggregate</report>
+						</reports>
+					</reportSet>
+				</reportSets>-->
+
+				
+				<configuration>
+				 	<!-- Use the delomboked output as the base for the javadocs -->
+        			<sourcepath>${delombok.output}</sourcepath>
+					<source>1.8</source>
+					<detectJavaApiLink>true</detectJavaApiLink>
+			        <noqualifier>org.anchoranalysis.*:java.lang:java.io</noqualifier>
+<!--			        <links>
+			            <link>https://www.anchoranalysis.org/developer_guide_repositories_overview.html</link>
+			        </links>-->
+				
+					<skip>false</skip>
+				
+					<!--  Disable the lint as it's very over-sensitive -->
+					<!--<additionalparam>-Xdoclint:none</additionalparam>-->
+				</configuration>
+			</plugin>
+						
     </plugins>
     </build>
     
@@ -102,14 +167,14 @@
 						${path.anchor}/anchor-mpp/target/delombok;
 						${path.anchor}/anchor-mpp-feature/target/delombok;
 						${path.anchor}/anchor-mpp-io/target/delombok;
-						${path.anchor}/anchor-mpp-plot/target/delombok;
-						${path.anchor}/anchor-mpp-sgmn/target/delombok;						
+						${path.anchor}/anchor-mpp-segment/target/delombok;						
 						${path.anchor}/anchor-overlay/target/delombok;
 						${path.anchor}/anchor-plot/target/delombok;
 						${path.anchor}/anchor-test/target/delombok;
 						${path.anchor}/anchor-test-feature/target/delombok;
 						${path.anchor}/anchor-test-image/target/delombok
 					</sourcepath>
+										
 				</configuration>
             <reportSets>
                     <reportSet>
