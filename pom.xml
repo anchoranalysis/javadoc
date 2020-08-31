@@ -1,0 +1,161 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+  <parent>
+        <groupId>org.anchoranalysis.anchor</groupId>
+   	    <artifactId>anchor-pom</artifactId>
+		<version>0.0.16-SNAPSHOT</version>
+    </parent> 
+	
+    <artifactId>anchor-javadoc-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Parent of Javadoc projects</name>
+    <url>http://www.anchoranalysis.org/</url>
+    
+	<properties>
+	   <path.suffix.javadoc>target/delombok</path.suffix.javadoc>
+	   <path.anchor>../../anchor</path.anchor>
+	   <path.anchor-plugins>../../anchor-plugins</path.anchor-plugins>
+	   <source.path.anchor>
+						${path.anchor}/anchor-annotation/${path.suffix.javadoc};
+						${path.anchor}/anchor-annotation-io/${path.suffix.javadoc};
+						${path.anchor}/anchor-bean/${path.suffix.javadoc};
+						${path.anchor}/anchor-beans-shared/${path.suffix.javadoc};
+						${path.anchor}/anchor-core/${path.suffix.javadoc};
+						${path.anchor}/anchor-experiment/${path.suffix.javadoc};
+						${path.anchor}/anchor-core/${path.suffix.javadoc};
+						${path.anchor}/anchor-feature/${path.suffix.javadoc};
+						${path.anchor}/anchor-feature-io/${path.suffix.javadoc};
+						${path.anchor}/anchor-feature-session/${path.suffix.javadoc};
+						${path.anchor}/anchor-image/${path.suffix.javadoc};
+						${path.anchor}/anchor-image-bean/${path.suffix.javadoc};
+						${path.anchor}/anchor-image-experiment/${path.suffix.javadoc};
+						${path.anchor}/anchor-image-feature/${path.suffix.javadoc};
+						${path.anchor}/anchor-image-io/${path.suffix.javadoc};
+						${path.anchor}/anchor-io/${path.suffix.javadoc};
+						${path.anchor}/anchor-io-bioformats/${path.suffix.javadoc};
+						${path.anchor}/anchor-io-generator/${path.suffix.javadoc};
+						${path.anchor}/anchor-imagej/${path.suffix.javadoc};
+						${path.anchor}/anchor-io-manifest/${path.suffix.javadoc};
+						${path.anchor}/anchor-io-output/${path.suffix.javadoc};
+						${path.anchor}/anchor-math/${path.suffix.javadoc};
+						${path.anchor}/anchor-mpp/${path.suffix.javadoc};
+						${path.anchor}/anchor-mpp-feature/${path.suffix.javadoc};
+						${path.anchor}/anchor-mpp-io/${path.suffix.javadoc};
+						${path.anchor}/anchor-mpp-segment/${path.suffix.javadoc};						
+						${path.anchor}/anchor-overlay/${path.suffix.javadoc};
+						${path.anchor}/anchor-plot/${path.suffix.javadoc};
+						${path.anchor}/anchor-test/${path.suffix.javadoc};
+						${path.anchor}/anchor-test-feature/${path.suffix.javadoc};
+						${path.anchor}/anchor-test-image/${path.suffix.javadoc}
+		</source.path.anchor>	   
+	   <source.path.anchor-plugins>${path.anchor-plugins}/anchor-plugin-image/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-image-feature/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-imagej/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-mpp/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-mpp-experiment/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-mpp-feature/${path.suffix.javadoc};
+		   ${path.anchor-plugins}/anchor-plugin-mpp-segment/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-points/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-io/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-image-task/${path.suffix.javadoc};
+		   ${path.anchor-plugins}/anchor-plugin-quick/${path.suffix.javadoc};
+		   ${path.anchor-plugins}/anchor-plugin-annotation/${path.suffix.javadoc};
+		   ${path.anchor-plugins}/anchor-plugin-opencv/${path.suffix.javadoc};
+		   ${path.anchor-plugins}/anchor-plugin-operator-feature/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-test-experiment/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-test-mpp/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-test-feature-plugins/${path.suffix.javadoc}	</source.path.anchor-plugins>
+			
+    </properties>
+	
+	<!-- Provides a means of reaching anchor-pom and ImageJ -->
+    <repositories>
+		<repository>
+		  <releases>
+			<enabled>true</enabled>
+			<updatePolicy>never</updatePolicy>
+			<checksumPolicy>warn</checksumPolicy>
+		  </releases>
+		  <snapshots>
+			<enabled>true</enabled>
+			<updatePolicy>always</updatePolicy>
+			<checksumPolicy>warn</checksumPolicy>
+		  </snapshots>
+		  <id>anchor</id>
+		   <name>anchor</name>
+		   <url>http://maven.anchoranalysis.org:8081/repository/anchor</url>
+		  <layout>default</layout>
+		</repository>
+		
+		<repository>
+			<id>imagej</id>
+			<name>ImageJ repository</name>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+		
+   	</repositories>
+	
+	
+    	<build>
+	    
+		<plugins>
+			
+		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.9.1</version>
+				<configuration>
+				</configuration>
+			</plugin>	
+            
+	    <plugin>    
+	        <artifactId>maven-compiler-plugin</artifactId>
+	        <configuration>
+	            <source>1.8</source>
+	            <target>1.8</target>
+	        </configuration>
+	    </plugin>
+		
+		
+		      <!-- Second javadoc plugin definition -->
+		      <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>3.2.0</version>
+    <executions>
+            <execution>
+                    <id>attach-javadocs</id>
+                    <goals>
+                            <goal>aggregate</goal>
+                    </goals>
+            </execution>
+			          <execution>
+            <id>aggregate</id>
+            <goals>
+              <goal>aggregate</goal>
+            </goals>
+            <phase>site</phase>
+            <configuration>
+              <!-- Specific configuration for the aggregate report -->
+              ...
+            </configuration>
+          </execution>
+    </executions>				
+				
+				<configuration>
+				 	<!-- Use the delomboked output as the base for the javadocs -->
+        			<sourcepath>${delombok.output}</sourcepath>
+					<source>1.8</source>
+					<detectJavaApiLink>true</detectJavaApiLink>
+			        <noqualifier>org.anchoranalysis.*:java.lang:java.io</noqualifier>
+					<skip>false</skip>
+				</configuration>
+			</plugin>
+						
+    </plugins>
+    </build>
+	
+	
+		
+</project>

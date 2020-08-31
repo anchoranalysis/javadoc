@@ -10,7 +10,7 @@
     </parent> 
 	
     <groupId>org.anchoranalysis</groupId>
-    <artifactId>anchor-javadoc</artifactId>
+    <artifactId>anchor-plugins-javadoc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Aggregator project for generating javadocs</name>
@@ -18,39 +18,29 @@
 	
 	<!-- All the modules from https://github.com/anchoranalysis/anchor -->
 	<modules>
-        <module>${path.anchor}/anchor-core</module>
-        <module>${path.anchor}/anchor-bean</module>
-        <module>${path.anchor}/anchor-beans-shared</module>
-        <module>${path.anchor}/anchor-annotation</module>
-        <module>${path.anchor}/anchor-image</module>
-        <module>${path.anchor}/anchor-math</module>
-        <module>${path.anchor}/anchor-overlay</module>
-        <module>${path.anchor}/anchor-io</module>
-	<module>${path.anchor}/anchor-io-manifest</module>
-	<module>${path.anchor}/anchor-io-output</module>
-	<module>${path.anchor}/anchor-io-generator</module>
-        <module>${path.anchor}/anchor-feature</module>
-		<module>${path.anchor}/anchor-feature-session</module>
-        <module>${path.anchor}/anchor-image-bean</module>
-        <module>${path.anchor}/anchor-image-feature</module>
-        <module>${path.anchor}/anchor-mpp</module>
-        <module>${path.anchor}/anchor-mpp-feature</module>
-        <module>${path.anchor}/anchor-experiment</module>
-        <module>${path.anchor}/anchor-feature-io</module>
-        <module>${path.anchor}/anchor-image-io</module>
-        <module>${path.anchor}/anchor-mpp-io</module>
-        <module>${path.anchor}/anchor-mpp-segment</module>
-        <module>${path.anchor}/anchor-image-experiment</module>
-        <module>${path.anchor}/anchor-plot</module>
-	<module>${path.anchor}/anchor-annotation-io</module>
-	   <module>${path.anchor}/anchor-io-bioformats</module>
-	   <module>${path.anchor}/anchor-imagej</module>
-		<module>${path.anchor}/anchor-test</module>
-		<module>${path.anchor}/anchor-test-feature</module>
-		<module>${path.anchor}/anchor-test-image</module>
+	    <module>${path.anchor-plugins}/anchor-plugin-image</module>
+        <module>${path.anchor-plugins}/anchor-plugin-image-feature</module>
+        <module>${path.anchor-plugins}/anchor-plugin-imagej</module>
+        <module>${path.anchor-plugins}/anchor-plugin-mpp</module>
+        <module>${path.anchor-plugins}/anchor-plugin-mpp-experiment</module>
+        <module>${path.anchor-plugins}/anchor-plugin-mpp-feature</module>
+	   <module>${path.anchor-plugins}/anchor-plugin-mpp-segment</module>
+        <module>${path.anchor-plugins}/anchor-plugin-points</module>
+        <module>${path.anchor-plugins}/anchor-plugin-io</module>
+        <module>${path.anchor-plugins}/anchor-plugin-image-task</module>
+	   <module>${path.anchor-plugins}/anchor-plugin-quick</module>
+	   <module>${path.anchor-plugins}/anchor-plugin-annotation</module>
+	   <module>${path.anchor-plugins}/anchor-plugin-opencv</module>
+	   <module>${path.anchor-plugins}/anchor-plugin-operator-feature</module>
+		<module>${path.anchor-plugins}/anchor-test-experiment</module>
+		<module>${path.anchor-plugins}/anchor-test-mpp</module>
+		<module>${path.anchor-plugins}/anchor-test-feature-plugins</module>
     </modules>
 	
-	<reporting>
+    
+    
+    
+    <reporting>
 		<plugins>
                 
 			<plugin>
@@ -63,7 +53,7 @@
 					<source>1.8</source>
 					<detectJavaApiLink>true</detectJavaApiLink>
 					<noqualifier>org.anchoranalysis.*:java.lang:java.io</noqualifier>
-					<sourcepath>${source.path.anchor}</sourcepath>
+					<sourcepath>${source.path.anchor-plugins}</sourcepath>
 										
 				</configuration>
             <reportSets>
