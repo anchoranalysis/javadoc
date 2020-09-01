@@ -1,0 +1,110 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+        <groupId>org.anchoranalysis.anchor</groupId>
+   	    <artifactId>anchor-javadoc-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+    </parent> 
+	
+    <groupId>org.anchoranalysis</groupId>
+    <artifactId>anchor-all-except-gui</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Anchor - merged Javadoc across key repositories.</name>
+
+	
+	<!-- All the modules from https://github.com/anchoranalysis/anchor -->
+	<modules>
+		<module>${path.anchor}/anchor-core</module>
+        <module>${path.anchor}/anchor-bean</module>
+        <module>${path.anchor}/anchor-beans-shared</module>
+        <module>${path.anchor}/anchor-annotation</module>
+        <module>${path.anchor}/anchor-image</module>
+        <module>${path.anchor}/anchor-math</module>
+        <module>${path.anchor}/anchor-overlay</module>
+        <module>${path.anchor}/anchor-io</module>
+	<module>${path.anchor}/anchor-io-manifest</module>
+	<module>${path.anchor}/anchor-io-output</module>
+	<module>${path.anchor}/anchor-io-generator</module>
+        <module>${path.anchor}/anchor-feature</module>
+		<module>${path.anchor}/anchor-feature-session</module>
+        <module>${path.anchor}/anchor-image-bean</module>
+        <module>${path.anchor}/anchor-image-feature</module>
+        <module>${path.anchor}/anchor-mpp</module>
+        <module>${path.anchor}/anchor-mpp-feature</module>
+        <module>${path.anchor}/anchor-experiment</module>
+        <module>${path.anchor}/anchor-feature-io</module>
+        <module>${path.anchor}/anchor-image-io</module>
+        <module>${path.anchor}/anchor-mpp-io</module>
+        <module>${path.anchor}/anchor-mpp-segment</module>
+        <module>${path.anchor}/anchor-image-experiment</module>
+        <module>${path.anchor}/anchor-plot</module>
+	<module>${path.anchor}/anchor-annotation-io</module>
+	   <module>${path.anchor}/anchor-io-bioformats</module>
+	   <module>${path.anchor}/anchor-imagej</module>
+		<module>${path.anchor}/anchor-test</module>
+		<module>${path.anchor}/anchor-test-feature</module>
+		<module>${path.anchor}/anchor-test-image</module>	
+	    <module>${path.anchor-plugins}/anchor-plugin-image</module>
+        <module>${path.anchor-plugins}/anchor-plugin-image-feature</module>
+        <module>${path.anchor-plugins}/anchor-plugin-imagej</module>
+        <module>${path.anchor-plugins}/anchor-plugin-mpp</module>
+        <module>${path.anchor-plugins}/anchor-plugin-mpp-experiment</module>
+        <module>${path.anchor-plugins}/anchor-plugin-mpp-feature</module>
+	   <module>${path.anchor-plugins}/anchor-plugin-mpp-segment</module>
+        <module>${path.anchor-plugins}/anchor-plugin-points</module>
+        <module>${path.anchor-plugins}/anchor-plugin-io</module>
+        <module>${path.anchor-plugins}/anchor-plugin-image-task</module>
+	   <module>${path.anchor-plugins}/anchor-plugin-quick</module>
+	   <module>${path.anchor-plugins}/anchor-plugin-annotation</module>
+	   <module>${path.anchor-plugins}/anchor-plugin-opencv</module>
+	   <module>${path.anchor-plugins}/anchor-plugin-operator-feature</module>
+		<module>${path.anchor-plugins}/anchor-test-experiment</module>
+		<module>${path.anchor-plugins}/anchor-test-mpp</module>
+		<module>${path.anchor-plugins}/anchor-test-feature-plugins</module>
+    </modules>
+	
+    
+    
+    
+    <reporting>
+		<plugins>
+                
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+				<!-- As we wish to run Javadoc on delombokked source, this creates a problem for javadoc:aggregator, so as a workaround we simply include all the source-paths -->
+        			
+					<source>1.8</source>
+					<detectJavaApiLink>true</detectJavaApiLink>
+					<noqualifier>org.anchoranalysis.*:java.lang:java.io</noqualifier>
+					<sourcepath>${source.path.anchor};${source.path.anchor-plugins}</sourcepath>
+										
+				</configuration>
+            <reportSets>
+                    <reportSet>
+                    <id>aggregate</id>
+
+                    <inherited>false</inherited>        
+                    <reports>
+                      <report>aggregate</report>
+                    </reports>
+                  </reportSet>
+                  <reportSet>
+                    <id>default</id>
+                    <reports>
+                      <report>javadoc</report>
+                    </reports>
+                    </reportSet>
+                </reportSets>
+			</plugin>
+	
+		</plugins>
+	</reporting>
+
+</project>
