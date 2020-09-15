@@ -13,7 +13,7 @@
     <artifactId>anchor-all-except-gui</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Anchor - merged Javadoc across key repositories.</name>
+    <name>Anchor - merged Javadoc across key repositories (documentation work in progress).</name>
 
 	
 	<!-- All the modules from https://github.com/anchoranalysis/anchor -->
@@ -65,6 +65,11 @@
 		<module>${path.anchor-plugins}/anchor-test-experiment</module>
 		<module>${path.anchor-plugins}/anchor-test-mpp</module>
 		<module>${path.anchor-plugins}/anchor-test-feature-plugins</module>
+	    <module>${path.anchor-plugins-gpl}/anchor-plugin-fiji</module>
+        <module>${path.anchor-plugins-gpl}/anchor-plugin-io-gpl</module>
+        <module>${path.anchor-plugins-gpl}/anchor-plugin-ml</module>
+	    <module>${path.anchor-assembly}/addplugins/anchor-launcher</module>
+        <module>${path.anchor-assembly}/addplugins/anchor-browser</module>		
     </modules>
 	
     
@@ -83,7 +88,7 @@
 					<source>1.8</source>
 					<detectJavaApiLink>true</detectJavaApiLink>
 					<noqualifier>org.anchoranalysis.*:java.lang:java.io</noqualifier>
-					<sourcepath>${source.path.anchor};${source.path.anchor-plugins}</sourcepath>
+					<sourcepath>${source.path.anchor};${source.path.anchor-plugins};${source.path.anchor-plugins-gpl};${source.path.anchor-assembly}</sourcepath>
 										
 				</configuration>
             <reportSets>

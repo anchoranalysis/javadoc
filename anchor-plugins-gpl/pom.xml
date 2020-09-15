@@ -10,30 +10,16 @@
     </parent> 
 	
     <groupId>org.anchoranalysis</groupId>
-    <artifactId>anchor-plugins-javadoc</artifactId>
+    <artifactId>anchor-plugins-gpl-javadoc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
 	
-	<!-- All the modules from https://github.com/anchoranalysis/anchor-plugins -->
+	<!-- All the modules from https://github.com/anchoranalysis/anchor-plugins-gpl -->
 	<modules>
-	    <module>${path.anchor-plugins}/anchor-plugin-image</module>
-        <module>${path.anchor-plugins}/anchor-plugin-image-feature</module>
-        <module>${path.anchor-plugins}/anchor-plugin-imagej</module>
-        <module>${path.anchor-plugins}/anchor-plugin-mpp</module>
-        <module>${path.anchor-plugins}/anchor-plugin-mpp-experiment</module>
-        <module>${path.anchor-plugins}/anchor-plugin-mpp-feature</module>
-	   <module>${path.anchor-plugins}/anchor-plugin-mpp-segment</module>
-        <module>${path.anchor-plugins}/anchor-plugin-points</module>
-        <module>${path.anchor-plugins}/anchor-plugin-io</module>
-        <module>${path.anchor-plugins}/anchor-plugin-image-task</module>
-	   <module>${path.anchor-plugins}/anchor-plugin-quick</module>
-	   <module>${path.anchor-plugins}/anchor-plugin-annotation</module>
-	   <module>${path.anchor-plugins}/anchor-plugin-opencv</module>
-	   <module>${path.anchor-plugins}/anchor-plugin-operator-feature</module>
-		<module>${path.anchor-plugins}/anchor-test-experiment</module>
-		<module>${path.anchor-plugins}/anchor-test-mpp</module>
-		<module>${path.anchor-plugins}/anchor-test-feature-plugins</module>
+	    <module>${path.anchor-plugins-gpl}/anchor-plugin-fiji</module>
+        <module>${path.anchor-plugins-gpl}/anchor-plugin-io-gpl</module>
+        <module>${path.anchor-plugins-gpl}/anchor-plugin-ml</module>
     </modules>
 	
     
@@ -52,7 +38,7 @@
 					<source>1.8</source>
 					<detectJavaApiLink>true</detectJavaApiLink>
 					<noqualifier>org.anchoranalysis.*:java.lang:java.io</noqualifier>
-					<sourcepath>${source.path.anchor-plugins}</sourcepath>
+					<sourcepath>${source.path.anchor-plugins-gpl}</sourcepath>
 										
 				</configuration>
             <reportSets>

@@ -13,7 +13,6 @@
     <artifactId>anchor-javadoc</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Aggregator project for generating javadocs</name>
 
 	
 	<!-- All the modules from https://github.com/anchoranalysis/anchor -->

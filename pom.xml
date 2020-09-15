@@ -16,6 +16,8 @@
 	   <path.suffix.javadoc>target/delombok</path.suffix.javadoc>
 	   <path.anchor>../../anchor</path.anchor>
 	   <path.anchor-plugins>../../anchor-plugins</path.anchor-plugins>
+	   <path.anchor-plugins-gpl>../../anchor-plugins-gpl</path.anchor-plugins-gpl>
+	   <path.anchor-assembly>../../anchor-assembly</path.anchor-assembly>
 	   <source.path.anchor>
 						${path.anchor}/anchor-annotation/${path.suffix.javadoc};
 						${path.anchor}/anchor-annotation-io/${path.suffix.javadoc};
@@ -65,8 +67,15 @@
 		   ${path.anchor-plugins}/anchor-plugin-operator-feature/${path.suffix.javadoc};
 			${path.anchor-plugins}/anchor-test-experiment/${path.suffix.javadoc};
 			${path.anchor-plugins}/anchor-test-mpp/${path.suffix.javadoc};
-			${path.anchor-plugins}/anchor-test-feature-plugins/${path.suffix.javadoc}	</source.path.anchor-plugins>
-			
+			${path.anchor-plugins}/anchor-test-feature-plugins/${path.suffix.javadoc}	
+		</source.path.anchor-plugins>
+	   <source.path.anchor-plugins-gpl>${path.anchor-plugins-gpl}/anchor-plugin-fiji/${path.suffix.javadoc};
+			${path.anchor-plugins-gpl}/anchor-plugin-io-gpl/${path.suffix.javadoc};
+			${path.anchor-plugins-gpl}/anchor-plugin-ml/${path.suffix.javadoc}
+		</source.path.anchor-plugins-gpl>	
+		<source.path.anchor-assembly>${path.anchor-assembly}/addplugins/anchor-launcher/${path.suffix.javadoc};
+			${path.anchor-assembly}/addplugins/anchor-browser/${path.suffix.javadoc}
+		</source.path.anchor-assembly>		
     </properties>
 	
 	<!-- Provides a means of reaching anchor-pom and ImageJ -->
