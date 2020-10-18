@@ -17,7 +17,7 @@
 	
 	<!-- All the modules from https://github.com/anchoranalysis/anchor-plugins -->
 	<modules>
-	    <module>${path.anchor-plugins}/anchor-plugin-image</module>
+	    <module>${path.anchor-plugins}/anchor-plugin-image-core</module>
         <module>${path.anchor-plugins}/anchor-plugin-image-feature</module>
         <module>${path.anchor-plugins}/anchor-plugin-imagej</module>
         <module>${path.anchor-plugins}/anchor-plugin-mpp</module>

@@ -21,11 +21,13 @@
 		<module>${path.anchor}/anchor-core</module>
         <module>${path.anchor}/anchor-bean</module>
         <module>${path.anchor}/anchor-beans-shared</module>
+		<module>${path.anchor}/anchor-spatial</module>
         <module>${path.anchor}/anchor-annotation</module>
-        <module>${path.anchor}/anchor-image</module>
+		<module>${path.anchor}/anchor-image-voxel</module>
+        <module>${path.anchor}/anchor-image-core</module>
         <module>${path.anchor}/anchor-math</module>
         <module>${path.anchor}/anchor-overlay</module>
-        <module>${path.anchor}/anchor-io</module>
+        <module>${path.anchor}/anchor-io-input</module>
 	<module>${path.anchor}/anchor-io-manifest</module>
 	<module>${path.anchor}/anchor-io-output</module>
 	<module>${path.anchor}/anchor-io-generator</module>
@@ -46,6 +48,7 @@
 	   <module>${path.anchor}/anchor-io-bioformats</module>
 	   <module>${path.anchor}/anchor-imagej</module>
 		<module>${path.anchor}/anchor-test</module>
+		<module>${path.anchor}/anchor-test-io-output</module>
 		<module>${path.anchor}/anchor-test-feature</module>
 		<module>${path.anchor}/anchor-test-image</module>	
 	    <module>${path.anchor-plugins}/anchor-plugin-image</module>
