@@ -42,7 +42,6 @@
         <module>${path.anchor}/anchor-image-io</module>
         <module>${path.anchor}/anchor-mpp-io</module>
         <module>${path.anchor}/anchor-mpp-segment</module>
-        <module>${path.anchor}/anchor-image-experiment</module>
         <module>${path.anchor}/anchor-plot</module>
 	<module>${path.anchor}/anchor-annotation-io</module>
 	   <module>${path.anchor}/anchor-io-bioformats</module>

@@ -33,7 +33,6 @@
 						${path.anchor}/anchor-image-core/${path.suffix.javadoc};
 						${path.anchor}/anchor-image-voxel/${path.suffix.javadoc};
 						${path.anchor}/anchor-image-bean/${path.suffix.javadoc};
-						${path.anchor}/anchor-image-experiment/${path.suffix.javadoc};
 						${path.anchor}/anchor-image-feature/${path.suffix.javadoc};
 						${path.anchor}/anchor-image-io-input/${path.suffix.javadoc};
 						${path.anchor}/anchor-io/${path.suffix.javadoc};
