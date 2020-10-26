@@ -34,8 +34,8 @@
 						${path.anchor}/anchor-image-voxel/${path.suffix.javadoc};
 						${path.anchor}/anchor-image-bean/${path.suffix.javadoc};
 						${path.anchor}/anchor-image-feature/${path.suffix.javadoc};
-						${path.anchor}/anchor-image-io-input/${path.suffix.javadoc};
-						${path.anchor}/anchor-io/${path.suffix.javadoc};
+						${path.anchor}/anchor-image-io/${path.suffix.javadoc};
+						${path.anchor}/anchor-io-input/${path.suffix.javadoc};
 						${path.anchor}/anchor-io-bioformats/${path.suffix.javadoc};
 						${path.anchor}/anchor-io-generator/${path.suffix.javadoc};
 						${path.anchor}/anchor-imagej/${path.suffix.javadoc};
