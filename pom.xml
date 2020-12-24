@@ -14,10 +14,10 @@
     
 	<properties>
 	   <path.suffix.javadoc>target/delombok</path.suffix.javadoc>
-	   <path.anchor>../../anchor</path.anchor>
-	   <path.anchor-plugins>../../anchor-plugins</path.anchor-plugins>
-	   <path.anchor-plugins-gpl>../../anchor-plugins-gpl</path.anchor-plugins-gpl>
-	   <path.anchor-assembly>../../anchor-assembly</path.anchor-assembly>
+	   <path.anchor>../submodules/anchor</path.anchor>
+	   <path.anchor-plugins>../submodules/anchor-plugins</path.anchor-plugins>
+	   <path.anchor-plugins-gpl>../submodules/anchor-plugins-gpl</path.anchor-plugins-gpl>
+	   <path.anchor-assembly>../submodules/anchor-assembly</path.anchor-assembly>
 	   <source.path.anchor>
 						${path.anchor}/anchor-annotation/${path.suffix.javadoc};
 						${path.anchor}/anchor-annotation-io/${path.suffix.javadoc};
