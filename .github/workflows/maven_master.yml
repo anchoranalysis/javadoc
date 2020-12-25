@@ -1,0 +1,58 @@
+# 
+# This workflow will build Javadocs for the various anchor Java projects aggregated together (but excluding the GUI).
+#
+# It is only triggered on master branch.
+#
+# It also:
+#  -  uploads the built Javadoc in a JAR to GitHub Packages
+#
+# The Maven working directories are cached for future reuse, as downloading all packages from scratch takes significant time.
+#
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+#
+
+name: Generate aggregate Javadoc with Maven
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout reposistory
+      uses: actions/checkout@v2
+    - name: Checkout submodules
+      uses: textbook/git-checkout-submodule-action@master    
+    - name: Set up JDK 8
+      uses: actions/setup-java@v1
+      with:
+        java-version: 8
+    - name: Cache Maven packages
+      uses: actions/cache@v2
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}-jdk8
+        restore-keys: ${{ runner.os }}-m2
+    - name: Create settings.xml for Maven
+      uses: s4u/maven-settings-action@v2.2.0
+      with:
+        servers: |
+            [{
+                "id": "github_path_path_finder",
+                "username": "$GITHUB_ACTOR",
+                "password": "${{ secrets.GITHUB_TOKEN }}"
+            }]    
+    - name: Build with Maven
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: mvn --batch-mode -f anchor-all-except-gui/pom.xml site javadoc:jar
+      
+    - name: Upload javadocs
+      uses: actions/upload-artifact@v2
+      with:
+        name: anchor-javadoc-except-gui
+        path: anchor-all-except-gui/target/site/apidocs
