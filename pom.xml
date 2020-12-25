@@ -11,7 +11,31 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>Parent of Javadoc projects</name>
     <url>http://www.anchoranalysis.org/</url>
+	<description>Generates Javadoc for Anchor</description>
     
+	<!-- Where to depoy (upload) artifacts to, making sure to associate with the corresponding
+	repository in GitHub Packages. Overrides settings that already are inherited from anchor-pom. -->
+	<distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub</name>
+            <url>https://maven.pkg.github.com/anchoranalysis/anchor-javadoc/</url>
+        </repository>
+	  <snapshotRepository>
+            <id>github</id>
+            <name>GitHub</name>
+            <url>https://maven.pkg.github.com/anchoranalysis/anchor-javadoc/</url>
+        </snapshotRepository>
+	</distributionManagement>
+	
+	<!-- For tagging releases. -->
+  	<scm>
+		<connection>scm:git:git@github.com:anchoranalysis/anchor-javadoc.git</connection>
+		<developerConnection>scm:git:git@github.com:anchoranalysis/anchor-javadoc.git</developerConnection>
+		<url>https://github.com/anchoranalysis/anchor-javadoc</url>
+		<tag>HEAD</tag>
+	</scm>
+	
 	<properties>
 	   <path.suffix.javadoc>target/delombok</path.suffix.javadoc>
 	   <path.anchor>../submodules/anchor</path.anchor>
@@ -93,16 +117,10 @@
 			<updatePolicy>always</updatePolicy>
 			<checksumPolicy>warn</checksumPolicy>
 		  </snapshots>
-		  <id>anchor</id>
-		   <name>anchor</name>
-		   <url>http://maven.anchoranalysis.org:8081/repository/anchor</url>
+		  <id>github</id>
+		   <name>GitHub anchor Apache Maven Packages</name>
+		   <url>https://maven.pkg.github.com/anchoranalysis/anchor-javadoc</url>
 		  <layout>default</layout>
-		</repository>
-		
-		<repository>
-			<id>imagej</id>
-			<name>ImageJ repository</name>
-			<url>http://maven.imagej.net/content/groups/public</url>
 		</repository>
 		
    	</repositories>

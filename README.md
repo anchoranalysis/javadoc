@@ -2,19 +2,23 @@
 
 This is part of the source-distribution for the [Anchor Image Analysis](http://www.anchoranalysis.org) software.
 
-It creates Javadocs for different Java repositories related to Anchor.
+It creates combined Javadoc among Java repositories related to Anchor.
 
 ## Usage
 
-**Precondition:** this repository (`anchor-javadoc`) exists in the same top-level directory in which the other anchor repositories are cloned i.e. `anchor-javadoc` and `anchor` and `anchor-plugins` etc. are adjacent.
+Ensure the git submodules point to the desired commit and branch. To update the submodules to the latest remote commit>
 
-In the relevant directory, execute:
+```
+git submodule update --recursive --remote
+```
+
+In the relevant directory e.g. in `anchor-all-except-gui/`, execute:
 
 ```
 mvn site javadoc:aggregate
 ```
 
-and the javadocs will be generated in `target/site/apidocs`.
+and the Javadoc will be generated in `target/site/apidocs`.
 
 ## What is Anchor?
 
