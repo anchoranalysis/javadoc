@@ -13,7 +13,7 @@
     <artifactId>anchor-all-except-gui</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Anchor - merged Javadoc across key repositories (documentation work in progress).</name>
+    <name>Anchor - merged Javadoc across key repositories. This documentation is a work-in-progress.</name>
 
 	
 	<!-- All the modules from https://github.com/anchoranalysis/anchor -->
