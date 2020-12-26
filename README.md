@@ -4,28 +4,7 @@ This is part of the source-distribution for the [Anchor Image Analysis](http://w
 
 It creates combined Javadoc, aggregated across Java repositories related to Anchor.
 
-On a change to the master branch, GitHub actions will execute the *anchor-all-except-gui* project and upload it to the `gh-pages` branch of the repository. This feeds into
-the anchor website at:
-
-```
-http://www.anchoranalysis.org/javadoc/
-```
-
-## Usage
-
-Ensure the git submodules point to the desired commit and branch. To update the submodules to the latest remote commit>
-
-```
-git submodule update --recursive --remote
-```
-
-Execute in a project top-level directory: e.g. in `anchor-all-except-gui/`
-
-```
-mvn site javadoc:aggregate
-```
-
-and the Javadoc will be generated in `target/site/apidocs`.
+Please see the relevant section of the [Developer Guide](https://www.anchoranalysis.org/developer_guide_repositories_javadoc.html) for updating and usage instructions.
 
 ## What is Anchor?
 
