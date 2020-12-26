@@ -1,14 +1,14 @@
-# anchor-javadoc
+# javadoc
 
 This is part of the source-distribution for the [Anchor Image Analysis](http://www.anchoranalysis.org) software.
 
 It creates combined Javadoc, aggregated across Java repositories related to Anchor.
 
 On a change to the master branch, GitHub actions will execute the *anchor-all-except-gui* project and upload it to the `gh-pages` branch of the repository. This feeds into
-a website for the Javadoc accessible at:
+the anchor website at:
 
 ```
-http://javadoc.anchoranalysis.org
+http://www.anchoranalysis.org/javadoc/
 ```
 
 ## Usage
