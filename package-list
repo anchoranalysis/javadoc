@@ -24,8 +24,7 @@ org.anchoranalysis.bean.provider
 org.anchoranalysis.bean.shared
 org.anchoranalysis.bean.shared.color
 org.anchoranalysis.bean.shared.color.scheme
-org.anchoranalysis.bean.shared.params
-org.anchoranalysis.bean.shared.params.keyvalue
+org.anchoranalysis.bean.shared.dictionary
 org.anchoranalysis.bean.shared.path
 org.anchoranalysis.bean.shared.random
 org.anchoranalysis.bean.shared.regex
@@ -203,6 +202,7 @@ org.anchoranalysis.image.voxel.interpolator
 org.anchoranalysis.image.voxel.iterator
 org.anchoranalysis.image.voxel.iterator.intersecting
 org.anchoranalysis.image.voxel.iterator.neighbor
+org.anchoranalysis.image.voxel.iterator.neighbor.kernel
 org.anchoranalysis.image.voxel.iterator.predicate
 org.anchoranalysis.image.voxel.iterator.process
 org.anchoranalysis.image.voxel.iterator.process.buffer
@@ -240,8 +240,8 @@ org.anchoranalysis.io.imagej.convert
 org.anchoranalysis.io.input
 org.anchoranalysis.io.input.bean
 org.anchoranalysis.io.input.bean.descriptivename
+org.anchoranalysis.io.input.bean.dictionary
 org.anchoranalysis.io.input.bean.files
-org.anchoranalysis.io.input.bean.params
 org.anchoranalysis.io.input.bean.path
 org.anchoranalysis.io.input.bean.path.matcher
 org.anchoranalysis.io.input.bean.path.provider
@@ -581,6 +581,7 @@ org.anchoranalysis.plugin.mpp.bean.stack.provider
 org.anchoranalysis.plugin.mpp.experiment
 org.anchoranalysis.plugin.mpp.experiment.bean
 org.anchoranalysis.plugin.mpp.experiment.bean.define
+org.anchoranalysis.plugin.mpp.experiment.bean.feature
 org.anchoranalysis.plugin.mpp.experiment.bean.feature.report
 org.anchoranalysis.plugin.mpp.experiment.bean.feature.report.task
 org.anchoranalysis.plugin.mpp.experiment.bean.feature.source
