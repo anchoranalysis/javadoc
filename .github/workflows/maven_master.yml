@@ -54,7 +54,7 @@ jobs:
     - name: Deploy to GitHubPages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         BRANCH: gh-pages
         FOLDER: anchor-all-except-gui/target/site/apidocs
         CLEAN: true
