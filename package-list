@@ -632,11 +632,10 @@ org.anchoranalysis.plugin.operator.feature.bean.arithmetic
 org.anchoranalysis.plugin.operator.feature.bean.conditional
 org.anchoranalysis.plugin.operator.feature.bean.list
 org.anchoranalysis.plugin.operator.feature.bean.range
-org.anchoranalysis.plugin.operator.feature.bean.range.feature
 org.anchoranalysis.plugin.operator.feature.bean.replace
-org.anchoranalysis.plugin.operator.feature.bean.score
+org.anchoranalysis.plugin.operator.feature.bean.statistics
 org.anchoranalysis.plugin.operator.feature.physical
-org.anchoranalysis.plugin.operator.feature.score
+org.anchoranalysis.plugin.operator.feature.statistics
 org.anchoranalysis.plugin.points.bean
 org.anchoranalysis.plugin.points.bean.convexhull
 org.anchoranalysis.plugin.points.bean.feature
