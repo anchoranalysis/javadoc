@@ -312,7 +312,7 @@ org.anchoranalysis.mpp.feature.energy.marks
 org.anchoranalysis.mpp.feature.energy.saved
 org.anchoranalysis.mpp.feature.energy.scheme
 org.anchoranalysis.mpp.feature.error
-org.anchoranalysis.mpp.feature.input.memo
+org.anchoranalysis.mpp.feature.input
 org.anchoranalysis.mpp.feature.mark
 org.anchoranalysis.mpp.index
 org.anchoranalysis.mpp.index.factory
@@ -335,18 +335,16 @@ org.anchoranalysis.mpp.proposer
 org.anchoranalysis.mpp.proposer.error
 org.anchoranalysis.mpp.segment.bean
 org.anchoranalysis.mpp.segment.bean.define
-org.anchoranalysis.mpp.segment.bean.kernel
-org.anchoranalysis.mpp.segment.bean.kernel.proposer
 org.anchoranalysis.mpp.segment.bean.optimization
 org.anchoranalysis.mpp.segment.bean.optimization.feedback
+org.anchoranalysis.mpp.segment.bean.optimization.kernel
 org.anchoranalysis.mpp.segment.bean.optimization.termination
 org.anchoranalysis.mpp.segment.define
-org.anchoranalysis.mpp.segment.kernel
-org.anchoranalysis.mpp.segment.kernel.proposer
 org.anchoranalysis.mpp.segment.optimization
 org.anchoranalysis.mpp.segment.optimization.feedback
 org.anchoranalysis.mpp.segment.optimization.feedback.aggregate
 org.anchoranalysis.mpp.segment.optimization.feedback.period
+org.anchoranalysis.mpp.segment.optimization.kernel
 org.anchoranalysis.mpp.segment.optimization.step
 org.anchoranalysis.mpp.segment.transformer
 org.anchoranalysis.overlay
@@ -619,6 +617,7 @@ org.anchoranalysis.plugin.opencv.bean.object.segment.decode.instance
 org.anchoranalysis.plugin.opencv.bean.object.segment.stack
 org.anchoranalysis.plugin.opencv.bean.stack
 org.anchoranalysis.plugin.opencv.convert
+org.anchoranalysis.plugin.opencv.segment
 org.anchoranalysis.plugin.operator.feature.bean
 org.anchoranalysis.plugin.operator.feature.bean.arithmetic
 org.anchoranalysis.plugin.operator.feature.bean.conditional
