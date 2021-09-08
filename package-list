@@ -20,7 +20,6 @@ org.anchoranalysis.bean.initializable.property
 org.anchoranalysis.bean.permute
 org.anchoranalysis.bean.permute.property
 org.anchoranalysis.bean.permute.setter
-org.anchoranalysis.bean.provider
 org.anchoranalysis.bean.shared
 org.anchoranalysis.bean.shared.color
 org.anchoranalysis.bean.shared.color.scheme
@@ -49,8 +48,7 @@ org.anchoranalysis.core.identifier.name
 org.anchoranalysis.core.identifier.provider
 org.anchoranalysis.core.identifier.provider.store
 org.anchoranalysis.core.index
-org.anchoranalysis.core.index.bounded
-org.anchoranalysis.core.index.bounded.bridge
+org.anchoranalysis.core.index.range
 org.anchoranalysis.core.log
 org.anchoranalysis.core.log.error
 org.anchoranalysis.core.progress
@@ -374,7 +372,6 @@ org.anchoranalysis.plugin.fiji.bean.mask.provider
 org.anchoranalysis.plugin.fiji.bean.threshold
 org.anchoranalysis.plugin.image.bean.blur
 org.anchoranalysis.plugin.image.bean.channel.convert
-org.anchoranalysis.plugin.image.bean.channel.convert.histogram
 org.anchoranalysis.plugin.image.bean.channel.provider
 org.anchoranalysis.plugin.image.bean.channel.provider.arithmetic
 org.anchoranalysis.plugin.image.bean.channel.provider.assign
