@@ -538,6 +538,7 @@ org.anchoranalysis.plugin.io.input.path
 org.anchoranalysis.plugin.io.manifest
 org.anchoranalysis.plugin.io.multifile
 org.anchoranalysis.plugin.io.multifile.buffer
+org.anchoranalysis.plugin.io.naming.interval
 org.anchoranalysis.plugin.io.shared
 org.anchoranalysis.plugin.io.xml
 org.anchoranalysis.plugin.ml.bean.classifier
