@@ -5,6 +5,7 @@ org.anchoranalysis.annotation.io.assignment
 org.anchoranalysis.annotation.io.assignment.generator
 org.anchoranalysis.annotation.io.bean
 org.anchoranalysis.annotation.io.bean.comparer
+org.anchoranalysis.annotation.io.comparer
 org.anchoranalysis.annotation.io.image
 org.anchoranalysis.annotation.io.image.findable
 org.anchoranalysis.annotation.io.mark
@@ -366,6 +367,7 @@ org.anchoranalysis.plugin.annotation.bean.file
 org.anchoranalysis.plugin.annotation.bean.label
 org.anchoranalysis.plugin.annotation.bean.strategy
 org.anchoranalysis.plugin.annotation.comparison
+org.anchoranalysis.plugin.annotation.counter
 org.anchoranalysis.plugin.fiji.bean.channel.grayscalereconstruction
 org.anchoranalysis.plugin.fiji.bean.channel.provider
 org.anchoranalysis.plugin.fiji.bean.channel.provider.distance
