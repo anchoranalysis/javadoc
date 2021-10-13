@@ -642,7 +642,6 @@ org.anchoranalysis.plugin.quick.bean.file.path.derive
 org.anchoranalysis.plugin.quick.bean.input
 org.anchoranalysis.plugin.quick.bean.input.filepathappend
 org.anchoranalysis.plugin.quick.bean.structure
-org.anchoranalysis.spatial
 org.anchoranalysis.spatial.axis
 org.anchoranalysis.spatial.box
 org.anchoranalysis.spatial.point
