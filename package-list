@@ -59,6 +59,7 @@ org.anchoranalysis.core.random
 org.anchoranalysis.core.serialize
 org.anchoranalysis.core.system
 org.anchoranalysis.core.system.path
+org.anchoranalysis.core.time
 org.anchoranalysis.core.value
 org.anchoranalysis.experiment
 org.anchoranalysis.experiment.arguments
@@ -73,6 +74,7 @@ org.anchoranalysis.experiment.io
 org.anchoranalysis.experiment.log
 org.anchoranalysis.experiment.task
 org.anchoranalysis.experiment.task.processor
+org.anchoranalysis.experiment.time
 org.anchoranalysis.feature.bean
 org.anchoranalysis.feature.bean.list
 org.anchoranalysis.feature.bean.operator
@@ -85,6 +87,7 @@ org.anchoranalysis.feature.input
 org.anchoranalysis.feature.io.csv
 org.anchoranalysis.feature.io.name
 org.anchoranalysis.feature.io.results
+org.anchoranalysis.feature.io.results.calculation
 org.anchoranalysis.feature.io.results.group
 org.anchoranalysis.feature.name
 org.anchoranalysis.feature.results
@@ -164,6 +167,7 @@ org.anchoranalysis.image.io.bean.channel
 org.anchoranalysis.image.io.bean.object.draw
 org.anchoranalysis.image.io.bean.object.feature
 org.anchoranalysis.image.io.bean.stack.combine
+org.anchoranalysis.image.io.bean.stack.metadata.reader
 org.anchoranalysis.image.io.bean.stack.reader
 org.anchoranalysis.image.io.bean.stack.writer
 org.anchoranalysis.image.io.channel.input
@@ -227,6 +231,7 @@ org.anchoranalysis.io.bioformats.copyconvert.tobyte
 org.anchoranalysis.io.bioformats.copyconvert.tofloat
 org.anchoranalysis.io.bioformats.copyconvert.toint
 org.anchoranalysis.io.bioformats.copyconvert.toshort
+org.anchoranalysis.io.bioformats.metadata
 org.anchoranalysis.io.generator
 org.anchoranalysis.io.generator.collection
 org.anchoranalysis.io.generator.combined
@@ -431,8 +436,10 @@ org.anchoranalysis.plugin.image.channel
 org.anchoranalysis.plugin.image.feature.bean.dimensions
 org.anchoranalysis.plugin.image.feature.bean.histogram.statistic
 org.anchoranalysis.plugin.image.feature.bean.histogram.threshold
+org.anchoranalysis.plugin.image.feature.bean.list
 org.anchoranalysis.plugin.image.feature.bean.list.pair
 org.anchoranalysis.plugin.image.feature.bean.list.permute
+org.anchoranalysis.plugin.image.feature.bean.metadata
 org.anchoranalysis.plugin.image.feature.bean.morphological
 org.anchoranalysis.plugin.image.feature.bean.object.collection
 org.anchoranalysis.plugin.image.feature.bean.object.combine
@@ -526,6 +533,8 @@ org.anchoranalysis.plugin.io.bean.input.files.provider
 org.anchoranalysis.plugin.io.bean.input.filter
 org.anchoranalysis.plugin.io.bean.input.manifest
 org.anchoranalysis.plugin.io.bean.input.stack
+org.anchoranalysis.plugin.io.bean.metadata.header
+org.anchoranalysis.plugin.io.bean.metadata.reader
 org.anchoranalysis.plugin.io.bean.path.derive
 org.anchoranalysis.plugin.io.bean.stack.reader
 org.anchoranalysis.plugin.io.bean.stack.writer
