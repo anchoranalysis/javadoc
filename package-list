@@ -16,7 +16,7 @@ org.anchoranalysis.bean.define
 org.anchoranalysis.bean.define.adder
 org.anchoranalysis.bean.exception
 org.anchoranalysis.bean.initializable
-org.anchoranalysis.bean.initializable.params
+org.anchoranalysis.bean.initializable.parameters
 org.anchoranalysis.bean.initializable.property
 org.anchoranalysis.bean.permute
 org.anchoranalysis.bean.permute.assign
@@ -45,6 +45,7 @@ org.anchoranalysis.core.exception.friendly
 org.anchoranalysis.core.format
 org.anchoranalysis.core.functional
 org.anchoranalysis.core.functional.checked
+org.anchoranalysis.core.functional.unchecked
 org.anchoranalysis.core.graph
 org.anchoranalysis.core.identifier.getter
 org.anchoranalysis.core.identifier.name
@@ -81,8 +82,12 @@ org.anchoranalysis.feature.bean.operator
 org.anchoranalysis.feature.bean.provider
 org.anchoranalysis.feature.bean.results
 org.anchoranalysis.feature.calculate
+org.anchoranalysis.feature.calculate.bound
 org.anchoranalysis.feature.calculate.cache
+org.anchoranalysis.feature.calculate.cache.part
+org.anchoranalysis.feature.calculate.part
 org.anchoranalysis.feature.energy
+org.anchoranalysis.feature.initialization
 org.anchoranalysis.feature.input
 org.anchoranalysis.feature.io.csv
 org.anchoranalysis.feature.io.name
@@ -94,8 +99,7 @@ org.anchoranalysis.feature.results
 org.anchoranalysis.feature.session
 org.anchoranalysis.feature.session.cache
 org.anchoranalysis.feature.session.cache.finder
-org.anchoranalysis.feature.session.calculator.multi
-org.anchoranalysis.feature.session.calculator.single
+org.anchoranalysis.feature.session.calculator
 org.anchoranalysis.feature.session.replace
 org.anchoranalysis.feature.shared
 org.anchoranalysis.feature.store
@@ -138,6 +142,7 @@ org.anchoranalysis.image.core.object
 org.anchoranalysis.image.core.object.label
 org.anchoranalysis.image.core.object.properties
 org.anchoranalysis.image.core.object.scale
+org.anchoranalysis.image.core.object.scale.method
 org.anchoranalysis.image.core.points
 org.anchoranalysis.image.core.stack
 org.anchoranalysis.image.core.stack.named
@@ -189,6 +194,7 @@ org.anchoranalysis.image.voxel.buffer.mean
 org.anchoranalysis.image.voxel.buffer.primitive
 org.anchoranalysis.image.voxel.buffer.slice
 org.anchoranalysis.image.voxel.convert
+org.anchoranalysis.image.voxel.convert.bufferedimage
 org.anchoranalysis.image.voxel.convert.imglib2
 org.anchoranalysis.image.voxel.datatype
 org.anchoranalysis.image.voxel.extracter
@@ -234,6 +240,7 @@ org.anchoranalysis.io.generator.text
 org.anchoranalysis.io.generator.xml
 org.anchoranalysis.io.imagej.bean.stack.writer
 org.anchoranalysis.io.imagej.convert
+org.anchoranalysis.io.imagej.iterpolator
 org.anchoranalysis.io.input
 org.anchoranalysis.io.input.bean
 org.anchoranalysis.io.input.bean.dictionary
@@ -414,7 +421,6 @@ org.anchoranalysis.plugin.image.bean.object.segment.channel.watershed.minima
 org.anchoranalysis.plugin.image.bean.object.segment.channel.watershed.minima.grayscalereconstruction
 org.anchoranalysis.plugin.image.bean.object.segment.channel.watershed.yeong
 org.anchoranalysis.plugin.image.bean.object.segment.reduce
-org.anchoranalysis.plugin.image.bean.object.segment.stack
 org.anchoranalysis.plugin.image.bean.scale
 org.anchoranalysis.plugin.image.bean.segment.binary
 org.anchoranalysis.plugin.image.bean.stack.provider
@@ -422,7 +428,6 @@ org.anchoranalysis.plugin.image.bean.stack.provider.color
 org.anchoranalysis.plugin.image.bean.stack.provider.plot
 org.anchoranalysis.plugin.image.bean.thumbnail.object
 org.anchoranalysis.plugin.image.bean.thumbnail.stack
-org.anchoranalysis.plugin.image.box
 org.anchoranalysis.plugin.image.channel
 org.anchoranalysis.plugin.image.feature.bean.dimensions
 org.anchoranalysis.plugin.image.feature.bean.histogram.statistic
@@ -468,7 +473,6 @@ org.anchoranalysis.plugin.image.object.merge
 org.anchoranalysis.plugin.image.object.merge.condition
 org.anchoranalysis.plugin.image.object.merge.priority
 org.anchoranalysis.plugin.image.provider
-org.anchoranalysis.plugin.image.segment
 org.anchoranalysis.plugin.image.segment.thresholder.slice
 org.anchoranalysis.plugin.image.segment.watershed.encoding
 org.anchoranalysis.plugin.image.task.bean
