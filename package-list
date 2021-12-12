@@ -238,9 +238,10 @@ org.anchoranalysis.io.generator.serialized
 org.anchoranalysis.io.generator.tabular
 org.anchoranalysis.io.generator.text
 org.anchoranalysis.io.generator.xml
+org.anchoranalysis.io.imagej.bean
 org.anchoranalysis.io.imagej.bean.stack.writer
 org.anchoranalysis.io.imagej.convert
-org.anchoranalysis.io.imagej.iterpolator
+org.anchoranalysis.io.imagej.interpolator
 org.anchoranalysis.io.input
 org.anchoranalysis.io.input.bean
 org.anchoranalysis.io.input.bean.dictionary
@@ -500,7 +501,6 @@ org.anchoranalysis.plugin.imagej.bean.channel.provider.filter
 org.anchoranalysis.plugin.imagej.bean.channel.provider.filter.moments
 org.anchoranalysis.plugin.imagej.bean.channel.provider.filter.rank
 org.anchoranalysis.plugin.imagej.bean.define
-org.anchoranalysis.plugin.imagej.bean.interpolator
 org.anchoranalysis.plugin.imagej.bean.mask.provider
 org.anchoranalysis.plugin.imagej.bean.object.provider
 org.anchoranalysis.plugin.imagej.bean.object.segment
@@ -625,10 +625,11 @@ org.anchoranalysis.plugin.mpp.segment.shared
 org.anchoranalysis.plugin.opencv
 org.anchoranalysis.plugin.opencv.bean.color
 org.anchoranalysis.plugin.opencv.bean.feature
-org.anchoranalysis.plugin.opencv.bean.object.segment.decode.instance
+org.anchoranalysis.plugin.opencv.bean.interpolate
 org.anchoranalysis.plugin.opencv.bean.object.segment.stack
 org.anchoranalysis.plugin.opencv.bean.stack
 org.anchoranalysis.plugin.opencv.convert
+org.anchoranalysis.plugin.opencv.interpolator
 org.anchoranalysis.plugin.opencv.segment
 org.anchoranalysis.plugin.operator.feature.bean
 org.anchoranalysis.plugin.operator.feature.bean.arithmetic
