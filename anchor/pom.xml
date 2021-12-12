@@ -49,6 +49,8 @@
 		<module>${path.anchor}/anchor-test-io-output</module>
 		<module>${path.anchor}/anchor-test-feature</module>
 		<module>${path.anchor}/anchor-test-image</module>
+		<module>${path.anchor}/anchor-inference</module>
+		<module>${path.anchor}/anchor-image-inference</module>
     </modules>
 	
 	<reporting>

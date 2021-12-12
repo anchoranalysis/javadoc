@@ -76,6 +76,8 @@
 						${path.anchor}/anchor-test-feature/${path.suffix.javadoc};
 						${path.anchor}/anchor-test-image/${path.suffix.javadoc}
 						${path.anchor}/anchor-test-io-output/${path.suffix.javadoc}
+						${path.anchor}/anchor-inference/${path.suffix.javadoc}
+						${path.anchor}/anchor-image-inference/${path.suffix.javadoc}
 		</source.path.anchor>	   
 	   <source.path.anchor-plugins>${path.anchor-plugins}/anchor-plugin-image/${path.suffix.javadoc};
 			${path.anchor-plugins}/anchor-plugin-image-feature/${path.suffix.javadoc};
@@ -83,14 +85,15 @@
 			${path.anchor-plugins}/anchor-plugin-mpp/${path.suffix.javadoc};
 			${path.anchor-plugins}/anchor-plugin-mpp-experiment/${path.suffix.javadoc};
 			${path.anchor-plugins}/anchor-plugin-mpp-feature/${path.suffix.javadoc};
-		   ${path.anchor-plugins}/anchor-plugin-mpp-segment/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-mpp-segment/${path.suffix.javadoc};
 			${path.anchor-plugins}/anchor-plugin-points/${path.suffix.javadoc};
 			${path.anchor-plugins}/anchor-plugin-io/${path.suffix.javadoc};
 			${path.anchor-plugins}/anchor-plugin-image-task/${path.suffix.javadoc};
-		   ${path.anchor-plugins}/anchor-plugin-quick/${path.suffix.javadoc};
-		   ${path.anchor-plugins}/anchor-plugin-annotation/${path.suffix.javadoc};
-		   ${path.anchor-plugins}/anchor-plugin-opencv/${path.suffix.javadoc};
-		   ${path.anchor-plugins}/anchor-plugin-operator-feature/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-quick/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-annotation/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-opencv/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-operator-feature/${path.suffix.javadoc};
+			${path.anchor-plugins}/anchor-plugin-onnx/${path.suffix.javadoc};
 			${path.anchor-plugins}/anchor-test-experiment/${path.suffix.javadoc};
 			${path.anchor-plugins}/anchor-test-mpp/${path.suffix.javadoc};
 			${path.anchor-plugins}/anchor-test-feature-plugins/${path.suffix.javadoc}	
