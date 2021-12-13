@@ -74,9 +74,9 @@
 						${path.anchor}/anchor-plot/${path.suffix.javadoc};
 						${path.anchor}/anchor-test/${path.suffix.javadoc};
 						${path.anchor}/anchor-test-feature/${path.suffix.javadoc};
-						${path.anchor}/anchor-test-image/${path.suffix.javadoc}
-						${path.anchor}/anchor-test-io-output/${path.suffix.javadoc}
-						${path.anchor}/anchor-inference/${path.suffix.javadoc}
+						${path.anchor}/anchor-test-image/${path.suffix.javadoc};
+						${path.anchor}/anchor-test-io-output/${path.suffix.javadoc};
+						${path.anchor}/anchor-inference/${path.suffix.javadoc};
 						${path.anchor}/anchor-image-inference/${path.suffix.javadoc}
 		</source.path.anchor>	   
 	   <source.path.anchor-plugins>${path.anchor-plugins}/anchor-plugin-image/${path.suffix.javadoc};

@@ -6,6 +6,14 @@ It creates combined Javadoc, aggregated across Java repositories related to Anch
 
 Please see the relevant section of the [Developer Guide](https://www.anchoranalysis.org/developer_guide_repositories_javadoc.html) for updating and usage instructions.
 
+## Adding new module
+
+To add a new Java module to the doc, please update the following:
+
+* The `pom.xml` in the repository root, adding the modules to the respective variables.
+* The `anchor-all-except-gui/pom.xml` adding a `<module>` entry for the respective modules (unless GUI-related).
+* The `OTHER_DIRECTORY/pom.xml` adding a `<module>` entry for the respective modules, with `OTHER_DIRECTORY` depending on where the project module belongs.
+
 ## What is Anchor?
 
 Anchor is a platform for image analysis, developed by [Owen Feehan](http://www.owenfeehan.com) at:
