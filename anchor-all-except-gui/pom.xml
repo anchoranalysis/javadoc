@@ -46,6 +46,8 @@
 	<module>${path.anchor}/anchor-annotation-io</module>
 	   <module>${path.anchor}/anchor-io-bioformats</module>
 	   <module>${path.anchor}/anchor-imagej</module>
+	   <module>${path.anchor}/anchor-inference</module>
+	   <module>${path.anchor}/anchor-image-inference</module>
 		<module>${path.anchor}/anchor-test</module>
 		<module>${path.anchor}/anchor-test-io-output</module>
 		<module>${path.anchor}/anchor-test-feature</module>
@@ -64,6 +66,7 @@
 	   <module>${path.anchor-plugins}/anchor-plugin-annotation</module>
 	   <module>${path.anchor-plugins}/anchor-plugin-opencv</module>
 	   <module>${path.anchor-plugins}/anchor-plugin-operator-feature</module>
+	   <module>${path.anchor-plugins}/anchor-plugin-onnx</module>
 		<module>${path.anchor-plugins}/anchor-test-experiment</module>
 		<module>${path.anchor-plugins}/anchor-test-mpp</module>
 		<module>${path.anchor-plugins}/anchor-test-feature-plugins</module>
