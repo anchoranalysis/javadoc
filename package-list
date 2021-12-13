@@ -622,6 +622,10 @@ org.anchoranalysis.plugin.mpp.segment.kernel.assigner
 org.anchoranalysis.plugin.mpp.segment.kernel.updater
 org.anchoranalysis.plugin.mpp.segment.optimization
 org.anchoranalysis.plugin.mpp.segment.shared
+org.anchoranalysis.plugin.onnx.bean.object.segment.decode.instance.maskrcnn
+org.anchoranalysis.plugin.onnx.bean.object.segment.decode.instance.text
+org.anchoranalysis.plugin.onnx.bean.object.segment.stack
+org.anchoranalysis.plugin.onnx.model
 org.anchoranalysis.plugin.opencv
 org.anchoranalysis.plugin.opencv.bean.color
 org.anchoranalysis.plugin.opencv.bean.feature
