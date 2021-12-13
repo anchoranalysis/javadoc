@@ -157,6 +157,11 @@ org.anchoranalysis.image.feature.calculation
 org.anchoranalysis.image.feature.calculator
 org.anchoranalysis.image.feature.calculator.merged
 org.anchoranalysis.image.feature.input
+org.anchoranalysis.image.inference
+org.anchoranalysis.image.inference.bean.reduce
+org.anchoranalysis.image.inference.bean.segment.instance
+org.anchoranalysis.image.inference.bean.segment.reduce
+org.anchoranalysis.image.inference.segment
 org.anchoranalysis.image.io
 org.anchoranalysis.image.io.bean.channel
 org.anchoranalysis.image.io.bean.object.draw
@@ -219,6 +224,8 @@ org.anchoranalysis.image.voxel.object.morphological
 org.anchoranalysis.image.voxel.object.morphological.predicate
 org.anchoranalysis.image.voxel.statistics
 org.anchoranalysis.image.voxel.thresholder
+org.anchoranalysis.inference
+org.anchoranalysis.inference.concurrency
 org.anchoranalysis.io.bioformats
 org.anchoranalysis.io.bioformats.bean
 org.anchoranalysis.io.bioformats.bean.options
@@ -630,6 +637,7 @@ org.anchoranalysis.plugin.opencv
 org.anchoranalysis.plugin.opencv.bean.color
 org.anchoranalysis.plugin.opencv.bean.feature
 org.anchoranalysis.plugin.opencv.bean.interpolate
+org.anchoranalysis.plugin.opencv.bean.object.segment.decode.instance
 org.anchoranalysis.plugin.opencv.bean.object.segment.stack
 org.anchoranalysis.plugin.opencv.bean.stack
 org.anchoranalysis.plugin.opencv.convert
@@ -671,3 +679,11 @@ org.anchoranalysis.test.feature
 org.anchoranalysis.test.feature.plugins
 org.anchoranalysis.test.feature.plugins.mockfeature
 org.anchoranalysis.test.feature.plugins.objects
+org.anchoranalysis.test.image
+org.anchoranalysis.test.image.csv
+org.anchoranalysis.test.image.io
+org.anchoranalysis.test.image.load
+org.anchoranalysis.test.image.object
+org.anchoranalysis.test.image.rasterwriter
+org.anchoranalysis.test.image.rasterwriter.comparison
+org.anchoranalysis.test.io.output
