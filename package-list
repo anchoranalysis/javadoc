@@ -90,9 +90,11 @@ org.anchoranalysis.feature.energy
 org.anchoranalysis.feature.initialization
 org.anchoranalysis.feature.input
 org.anchoranalysis.feature.io.csv
+org.anchoranalysis.feature.io.csv.metadata
+org.anchoranalysis.feature.io.csv.results
+org.anchoranalysis.feature.io.csv.table
 org.anchoranalysis.feature.io.name
 org.anchoranalysis.feature.io.results
-org.anchoranalysis.feature.io.results.calculation
 org.anchoranalysis.feature.io.results.group
 org.anchoranalysis.feature.name
 org.anchoranalysis.feature.results
@@ -106,7 +108,7 @@ org.anchoranalysis.feature.store
 org.anchoranalysis.image.bean
 org.anchoranalysis.image.bean.channel.converter
 org.anchoranalysis.image.bean.interpolator
-org.anchoranalysis.image.bean.nonbean.error
+org.anchoranalysis.image.bean.nonbean
 org.anchoranalysis.image.bean.nonbean.init
 org.anchoranalysis.image.bean.nonbean.segment
 org.anchoranalysis.image.bean.nonbean.spatial.arrange
@@ -205,7 +207,6 @@ org.anchoranalysis.image.voxel.datatype
 org.anchoranalysis.image.voxel.extracter
 org.anchoranalysis.image.voxel.extracter.predicate
 org.anchoranalysis.image.voxel.factory
-org.anchoranalysis.image.voxel.interpolator
 org.anchoranalysis.image.voxel.iterator
 org.anchoranalysis.image.voxel.iterator.intersecting
 org.anchoranalysis.image.voxel.iterator.neighbor
@@ -222,6 +223,7 @@ org.anchoranalysis.image.voxel.neighborhood
 org.anchoranalysis.image.voxel.object
 org.anchoranalysis.image.voxel.object.morphological
 org.anchoranalysis.image.voxel.object.morphological.predicate
+org.anchoranalysis.image.voxel.resizer
 org.anchoranalysis.image.voxel.statistics
 org.anchoranalysis.image.voxel.thresholder
 org.anchoranalysis.inference
@@ -245,10 +247,10 @@ org.anchoranalysis.io.generator.serialized
 org.anchoranalysis.io.generator.tabular
 org.anchoranalysis.io.generator.text
 org.anchoranalysis.io.generator.xml
-org.anchoranalysis.io.imagej.bean
+org.anchoranalysis.io.imagej.bean.interpolator
 org.anchoranalysis.io.imagej.bean.stack.writer
 org.anchoranalysis.io.imagej.convert
-org.anchoranalysis.io.imagej.interpolator
+org.anchoranalysis.io.imagej.resizer
 org.anchoranalysis.io.input
 org.anchoranalysis.io.input.bean
 org.anchoranalysis.io.input.bean.dictionary
@@ -641,7 +643,7 @@ org.anchoranalysis.plugin.opencv.bean.object.segment.decode.instance
 org.anchoranalysis.plugin.opencv.bean.object.segment.stack
 org.anchoranalysis.plugin.opencv.bean.stack
 org.anchoranalysis.plugin.opencv.convert
-org.anchoranalysis.plugin.opencv.interpolator
+org.anchoranalysis.plugin.opencv.resizer
 org.anchoranalysis.plugin.opencv.segment
 org.anchoranalysis.plugin.operator.feature.bean
 org.anchoranalysis.plugin.operator.feature.bean.arithmetic
