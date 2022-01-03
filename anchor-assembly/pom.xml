@@ -18,7 +18,6 @@
 	<!-- All the modules from https://github.com/anchoranalysis/anchor-assembly-gpl -->
 	<modules>
 	    <module>${path.anchor-assembly}/addplugins/anchor-launcher</module>
-        <module>${path.anchor-assembly}/addplugins/anchor-browser</module>
     </modules>
 	
     

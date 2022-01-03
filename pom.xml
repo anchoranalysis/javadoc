@@ -102,8 +102,7 @@
 			${path.anchor-plugins-gpl}/anchor-plugin-io-gpl/${path.suffix.javadoc};
 			${path.anchor-plugins-gpl}/anchor-plugin-ml/${path.suffix.javadoc}
 		</source.path.anchor-plugins-gpl>	
-		<source.path.anchor-assembly>${path.anchor-assembly}/addplugins/anchor-launcher/${path.suffix.javadoc};
-			${path.anchor-assembly}/addplugins/anchor-browser/${path.suffix.javadoc}
+		<source.path.anchor-assembly>${path.anchor-assembly}/addplugins/anchor-launcher/${path.suffix.javadoc}
 		</source.path.anchor-assembly>		
     </properties>
 	
