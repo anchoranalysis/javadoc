@@ -49,18 +49,18 @@ jobs:
     - name: Build with Maven
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: mvn --batch-mode -f anchor-all-except-gui/pom.xml site javadoc:aggregate
+      run: mvn --batch-mode -f anchor-all/pom.xml site javadoc:aggregate
       
     - name: Deploy to GitHubPages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: anchor-all-except-gui/target/site/apidocs
+        FOLDER: anchor-all/target/site/apidocs
         CLEAN: true
         
     - name: Upload javadoc
       uses: actions/upload-artifact@v2
       with:
         name: anchor-javadoc-except-gui
-        path: anchor-all-except-gui/target/site/apidocs        
+        path: anchor-all/target/site/apidocs        
