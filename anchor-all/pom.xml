@@ -72,7 +72,6 @@
         <module>${path.anchor-plugins-gpl}/anchor-plugin-io-gpl</module>
         <module>${path.anchor-plugins-gpl}/anchor-plugin-ml</module>
 	    <module>${path.anchor-assembly}/addplugins/anchor-launcher</module>
-        <module>${path.anchor-assembly}/addplugins/anchor-browser</module>		
     </modules>
 	
     
