@@ -10,7 +10,7 @@
     </parent> 
 	
     <groupId>org.anchoranalysis</groupId>
-    <artifactId>anchor-all-except-gui</artifactId>
+    <artifactId>anchor-all</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Anchor - merged Javadoc across key repositories. This documentation is a work-in-progress.</name>
@@ -28,7 +28,6 @@
         <module>${path.anchor}/anchor-math</module>
         <module>${path.anchor}/anchor-overlay</module>
         <module>${path.anchor}/anchor-io-input</module>
-	<module>${path.anchor}/anchor-io-manifest</module>
 	<module>${path.anchor}/anchor-io-output</module>
 	<module>${path.anchor}/anchor-io-generator</module>
         <module>${path.anchor}/anchor-feature</module>
@@ -42,7 +41,6 @@
         <module>${path.anchor}/anchor-image-io</module>
         <module>${path.anchor}/anchor-mpp-io</module>
         <module>${path.anchor}/anchor-mpp-segment</module>
-        <module>${path.anchor}/anchor-plot</module>
 	<module>${path.anchor}/anchor-annotation-io</module>
 	   <module>${path.anchor}/anchor-io-bioformats</module>
 	   <module>${path.anchor}/anchor-imagej</module>

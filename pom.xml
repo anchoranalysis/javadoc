@@ -63,7 +63,6 @@
 						${path.anchor}/anchor-io-bioformats/${path.suffix.javadoc};
 						${path.anchor}/anchor-io-generator/${path.suffix.javadoc};
 						${path.anchor}/anchor-imagej/${path.suffix.javadoc};
-						${path.anchor}/anchor-io-manifest/${path.suffix.javadoc};
 						${path.anchor}/anchor-io-output/${path.suffix.javadoc};
 						${path.anchor}/anchor-math/${path.suffix.javadoc};
 						${path.anchor}/anchor-mpp/${path.suffix.javadoc};
