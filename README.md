@@ -11,7 +11,7 @@ Please see the relevant section of the [Developer Guide](https://www.anchoranaly
 To add a new Java module to the automatically-generated documentation, please update the following:
 
 * The `pom.xml` in the repository root, adding the modules to the respective variables. Note the trailing semi-colon.
-* The `anchor-all-except-gui/pom.xml` adding a `<module>` entry for the respective modules (unless GUI-related).
+* The `anchor-all/pom.xml` adding a `<module>` entry for the respective modules (unless GUI-related).
 * The `OTHER_DIRECTORY/pom.xml` adding a `<module>` entry for the respective modules, with `OTHER_DIRECTORY` depending on where the project module belongs.
 
 ## What is Anchor?
