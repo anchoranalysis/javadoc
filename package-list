@@ -55,7 +55,6 @@ org.anchoranalysis.core.index
 org.anchoranalysis.core.index.range
 org.anchoranalysis.core.log
 org.anchoranalysis.core.log.error
-org.anchoranalysis.core.progress
 org.anchoranalysis.core.random
 org.anchoranalysis.core.serialize
 org.anchoranalysis.core.system
@@ -178,7 +177,7 @@ org.anchoranalysis.image.io.bean.stack.metadata.reader
 org.anchoranalysis.image.io.bean.stack.reader
 org.anchoranalysis.image.io.bean.stack.writer
 org.anchoranalysis.image.io.channel.input
-org.anchoranalysis.image.io.channel.input.series
+org.anchoranalysis.image.io.channel.map
 org.anchoranalysis.image.io.channel.output
 org.anchoranalysis.image.io.histogram.input
 org.anchoranalysis.image.io.histogram.output
@@ -260,12 +259,14 @@ org.anchoranalysis.io.input
 org.anchoranalysis.io.input.bean
 org.anchoranalysis.io.input.bean.dictionary
 org.anchoranalysis.io.input.bean.files
+org.anchoranalysis.io.input.bean.grouper
 org.anchoranalysis.io.input.bean.namer
 org.anchoranalysis.io.input.bean.path
 org.anchoranalysis.io.input.bean.path.matcher
 org.anchoranalysis.io.input.bean.path.provider
 org.anchoranalysis.io.input.csv
 org.anchoranalysis.io.input.file
+org.anchoranalysis.io.input.grouper
 org.anchoranalysis.io.input.path
 org.anchoranalysis.io.input.path.matcher
 org.anchoranalysis.io.output.bean
@@ -524,6 +525,7 @@ org.anchoranalysis.plugin.io.bean.file.path
 org.anchoranalysis.plugin.io.bean.file.path.prefixer
 org.anchoranalysis.plugin.io.bean.file.pattern
 org.anchoranalysis.plugin.io.bean.file.provider
+org.anchoranalysis.plugin.io.bean.grouper
 org.anchoranalysis.plugin.io.bean.input
 org.anchoranalysis.plugin.io.bean.input.channel
 org.anchoranalysis.plugin.io.bean.input.files
@@ -652,7 +654,6 @@ org.anchoranalysis.plugin.points.calculate.ellipse
 org.anchoranalysis.plugin.points.calculate.ellipsoid
 org.anchoranalysis.plugin.points.convexhull
 org.anchoranalysis.plugin.quick.bean.experiment
-org.anchoranalysis.plugin.quick.bean.file.path.derive
 org.anchoranalysis.plugin.quick.bean.input
 org.anchoranalysis.plugin.quick.bean.input.filepathappend
 org.anchoranalysis.plugin.quick.bean.structure
