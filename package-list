@@ -106,6 +106,7 @@ org.anchoranalysis.feature.shared
 org.anchoranalysis.feature.store
 org.anchoranalysis.image.bean
 org.anchoranalysis.image.bean.channel
+org.anchoranalysis.image.bean.displayer
 org.anchoranalysis.image.bean.interpolator
 org.anchoranalysis.image.bean.nonbean
 org.anchoranalysis.image.bean.nonbean.init
@@ -361,9 +362,7 @@ org.anchoranalysis.mpp.segment.transformer
 org.anchoranalysis.overlay
 org.anchoranalysis.overlay.bean
 org.anchoranalysis.overlay.collection
-org.anchoranalysis.overlay.identifier
 org.anchoranalysis.overlay.object
-org.anchoranalysis.overlay.object.scaled
 org.anchoranalysis.overlay.writer
 org.anchoranalysis.plugin.annotation.bean.aggregate
 org.anchoranalysis.plugin.annotation.bean.comparer
@@ -497,6 +496,7 @@ org.anchoranalysis.plugin.image.task.feature.calculator
 org.anchoranalysis.plugin.image.task.grouped
 org.anchoranalysis.plugin.image.task.labeller
 org.anchoranalysis.plugin.image.task.segment
+org.anchoranalysis.plugin.image.task.size
 org.anchoranalysis.plugin.image.task.slice
 org.anchoranalysis.plugin.image.task.stack
 org.anchoranalysis.plugin.image.thumbnail
