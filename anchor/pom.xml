@@ -6,51 +6,51 @@
   <parent>
         <groupId>org.anchoranalysis.anchor</groupId>
    	    <artifactId>anchor-javadoc-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
     </parent> 
 	
     <groupId>org.anchoranalysis</groupId>
     <artifactId>anchor-javadoc</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
 	
 	<!-- All the modules from https://github.com/anchoranalysis/anchor -->
 	<modules>
-        <module>${path.anchor}/anchor-core</module>
-        <module>${path.anchor}/anchor-bean</module>
-        <module>${path.anchor}/anchor-beans-shared</module>
-	   <module>${path.anchor}/anchor-spatial</module>
-        <module>${path.anchor}/anchor-annotation</module>
-        <module>${path.anchor}/anchor-image-core</module>
-	   <module>${path.anchor}/anchor-image-voxel</module>
-        <module>${path.anchor}/anchor-math</module>
-        <module>${path.anchor}/anchor-overlay</module>
-        <module>${path.anchor}/anchor-io-input</module>
-	<module>${path.anchor}/anchor-io-output</module>
-	<module>${path.anchor}/anchor-io-generator</module>
-        <module>${path.anchor}/anchor-feature</module>
+		<module>${path.anchor}/anchor-annotation</module>
+		<module>${path.anchor}/anchor-annotation-io</module>
+		<module>${path.anchor}/anchor-bean</module>
+		<module>${path.anchor}/anchor-beans-shared</module>
+		<module>${path.anchor}/anchor-core</module>
+		<module>${path.anchor}/anchor-experiment</module>
+		<module>${path.anchor}/anchor-feature</module>
+		<module>${path.anchor}/anchor-feature-io</module>
 		<module>${path.anchor}/anchor-feature-session</module>
-        <module>${path.anchor}/anchor-image-bean</module>
-        <module>${path.anchor}/anchor-image-feature</module>
-        <module>${path.anchor}/anchor-mpp</module>
-        <module>${path.anchor}/anchor-mpp-feature</module>
-        <module>${path.anchor}/anchor-experiment</module>
-        <module>${path.anchor}/anchor-feature-io</module>
-        <module>${path.anchor}/anchor-image-io</module>
-        <module>${path.anchor}/anchor-mpp-io</module>
-        <module>${path.anchor}/anchor-mpp-segment</module>
-        <module>${path.anchor}/anchor-plot</module>
-	<module>${path.anchor}/anchor-annotation-io</module>
-	   <module>${path.anchor}/anchor-io-bioformats</module>
-	   <module>${path.anchor}/anchor-imagej</module>
+		<module>${path.anchor}/anchor-image-bean</module>
+		<module>${path.anchor}/anchor-image-core</module>
+		<module>${path.anchor}/anchor-image-feature</module>
+		<module>${path.anchor}/anchor-image-inference</module>
+		<module>${path.anchor}/anchor-image-io</module>
+		<module>${path.anchor}/anchor-image-voxel</module>
+		<module>${path.anchor}/anchor-imagej</module>
+		<module>${path.anchor}/anchor-inference</module>
+		<module>${path.anchor}/anchor-io-bioformats</module>
+		<module>${path.anchor}/anchor-io-generator</module>
+		<module>${path.anchor}/anchor-io-input</module>
+		<module>${path.anchor}/anchor-io-output</module>
+		<module>${path.anchor}/anchor-math</module>
+		<module>${path.anchor}/anchor-mpp</module>
+		<module>${path.anchor}/anchor-mpp-feature</module>
+		<module>${path.anchor}/anchor-mpp-io</module>
+		<module>${path.anchor}/anchor-mpp-segment</module>
+		<module>${path.anchor}/anchor-overlay</module>
+		<module>${path.anchor}/anchor-plot</module>
+		<module>${path.anchor}/anchor-spatial</module>
 		<module>${path.anchor}/anchor-test</module>
-		<module>${path.anchor}/anchor-test-io-output</module>
 		<module>${path.anchor}/anchor-test-feature</module>
 		<module>${path.anchor}/anchor-test-image</module>
-		<module>${path.anchor}/anchor-inference</module>
-		<module>${path.anchor}/anchor-image-inference</module>
-    </modules>
+		<module>${path.anchor}/anchor-test-io-output</module>
+	</modules>
 	
 	<reporting>
 		<plugins>
@@ -58,11 +58,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.9.1</version>
+				<version>3.11.2</version>
 				<configuration>
 				<!-- As we wish to run Javadoc on delombokked source, this creates a problem for javadoc:aggregator, so as a workaround we simply include all the source-paths -->
         			
-					<source>1.8</source>
+					<source>21</source>
 					<detectJavaApiLink>true</detectJavaApiLink>
 					<noqualifier>org.anchoranalysis.*:java.lang:java.io</noqualifier>
 					<sourcepath>${source.path.anchor}</sourcepath>

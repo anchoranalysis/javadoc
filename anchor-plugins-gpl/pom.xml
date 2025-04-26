@@ -6,12 +6,12 @@
   <parent>
         <groupId>org.anchoranalysis.anchor</groupId>
    	    <artifactId>anchor-javadoc-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.0-SNAPSHOT</version>
     </parent> 
 	
     <groupId>org.anchoranalysis</groupId>
     <artifactId>anchor-plugins-gpl-javadoc</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
 	
@@ -31,11 +31,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.9.1</version>
+				<version>3.11.2</version>
 				<configuration>
 				<!-- As we wish to run Javadoc on delombokked source, this creates a problem for javadoc:aggregator, so as a workaround we simply include all the source-paths -->
         			
-					<source>1.8</source>
+					<source>21</source>
 					<detectJavaApiLink>true</detectJavaApiLink>
 					<noqualifier>org.anchoranalysis.*:java.lang:java.io</noqualifier>
 					<sourcepath>${source.path.anchor-plugins-gpl}</sourcepath>
