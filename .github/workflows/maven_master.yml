@@ -60,12 +60,12 @@ jobs:
       run: mvn --batch-mode -f anchor-all/pom.xml site javadoc:aggregate
       
     - name: Deploy to GitHubPages
-      uses: JamesIves/github-pages-deploy-action@4
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: anchor-all/target/site/apidocs
-        CLEAN: true
+        token: ${{ secrets.PERSONAL_TOKEN }}
+        branch: gh-pages
+        folder: anchor-all/target/site/apidocs
+        clean: true
         
     - name: Upload javadoc
       uses: actions/upload-artifact@v4
