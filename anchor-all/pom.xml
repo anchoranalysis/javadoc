@@ -6,12 +6,12 @@
   <parent>
         <groupId>org.anchoranalysis.anchor</groupId>
    	    <artifactId>anchor-javadoc-parent</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.0</version>
     </parent> 
 	
     <groupId>org.anchoranalysis</groupId>
     <artifactId>anchor-all</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
     <name>Anchor - merged Javadoc across key repositories. This documentation is a work-in-progress.</name>
 
@@ -64,7 +64,7 @@
 		<module>${path.anchor-plugins}/anchor-test-feature-plugins</module>
 	    <module>${path.anchor-plugins-gpl}/anchor-plugin-fiji</module>
         <module>${path.anchor-plugins-gpl}/anchor-plugin-io-gpl</module>
-	    <module>${path.anchor-assembly}/addplugins/anchor-launcher</module>
+	    <module>${path.anchor-launcher}/anchor-launcher</module>
     </modules>
 	
     
@@ -83,7 +83,7 @@
 					<source>21</source>
 					<detectJavaApiLink>true</detectJavaApiLink>
 					<noqualifier>org.anchoranalysis.*:java.lang:java.io</noqualifier>
-					<sourcepath>${source.path.anchor};${source.path.anchor-plugins};${source.path.anchor-plugins-gpl};${source.path.anchor-assembly}</sourcepath>
+					<sourcepath>${source.path.anchor};${source.path.anchor-plugins};${source.path.anchor-plugins-gpl};${source.path.anchor-launcher}</sourcepath>
 										
 				</configuration>
             <reportSets>

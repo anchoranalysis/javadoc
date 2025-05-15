@@ -4,9 +4,9 @@
 [submodule "submodules/anchor-plugins-gpl"]
 	path = submodules/anchor-plugins-gpl
 	url = git@github.com:anchoranalysis/anchor-plugins-gpl.git
-[submodule "submodules/anchor-assembly"]
-	path = submodules/anchor-assembly
-	url = git@github.com:anchoranalysis/anchor-assembly.git
 [submodule "submodules/anchor-plugins"]
 	path = submodules/anchor-plugins
 	url = git@github.com:anchoranalysis/anchor-plugins.git
+[submodule "submodules/anchor-launcher"]
+	path = submodules/anchor-launcher
+	url = git@github.com:anchoranalysis/anchor-launcher.git

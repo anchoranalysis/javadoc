@@ -3,12 +3,12 @@
   <parent>
         <groupId>org.anchoranalysis.anchor</groupId>
    	    <artifactId>anchor-pom</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.0</version>
     </parent> 
 	
     <artifactId>anchor-javadoc-parent</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>Parent of Javadoc projects</name>
     <url>http://www.anchoranalysis.org/</url>
 	<description>Generates Javadoc for Anchor</description>
@@ -41,7 +41,7 @@
 	   <path.anchor>../submodules/anchor</path.anchor>
 	   <path.anchor-plugins>../submodules/anchor-plugins</path.anchor-plugins>
 	   <path.anchor-plugins-gpl>../submodules/anchor-plugins-gpl</path.anchor-plugins-gpl>
-	   <path.anchor-assembly>../submodules/anchor-assembly</path.anchor-assembly>
+	   <path.anchor-launcher>../submodules/anchor-launcher</path.anchor-launcher>
 	   <source.path.anchor>
 						${path.anchor}/anchor-annotation/${path.suffix.javadoc};
 						${path.anchor}/anchor-annotation-io/${path.suffix.javadoc};
@@ -101,8 +101,8 @@
 			${path.anchor-plugins-gpl}/anchor-plugin-io-gpl/${path.suffix.javadoc};
 			${path.anchor-plugins-gpl}/anchor-plugin-ml/${path.suffix.javadoc}
 		</source.path.anchor-plugins-gpl>	
-		<source.path.anchor-assembly>${path.anchor-assembly}/addplugins/anchor-launcher/${path.suffix.javadoc}
-		</source.path.anchor-assembly>		
+		<source.path.anchor-launcher>${path.anchor-launcher}/anchor-launcher/${path.suffix.javadoc}
+		</source.path.anchor-launcher>		
     </properties>
 	
 	<repositories>

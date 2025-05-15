@@ -6,12 +6,12 @@
   <parent>
         <groupId>org.anchoranalysis.anchor</groupId>
    	    <artifactId>anchor-javadoc-parent</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.0</version>
     </parent> 
 	
     <groupId>org.anchoranalysis</groupId>
     <artifactId>anchor-plugins-gpl-javadoc</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
 	
@@ -19,7 +19,6 @@
 	<modules>
 	    <module>${path.anchor-plugins-gpl}/anchor-plugin-fiji</module>
         <module>${path.anchor-plugins-gpl}/anchor-plugin-io-gpl</module>
-        <module>${path.anchor-plugins-gpl}/anchor-plugin-ml</module>
     </modules>
 	
     

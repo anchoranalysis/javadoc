@@ -6,18 +6,18 @@
   <parent>
         <groupId>org.anchoranalysis.anchor</groupId>
    	    <artifactId>anchor-javadoc-parent</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>1.0.0</version>
     </parent> 
 	
     <groupId>org.anchoranalysis</groupId>
-    <artifactId>anchor-assembly-javadoc</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <artifactId>anchor-launcher-javadoc</artifactId>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
 
 	
-	<!-- All the modules from https://github.com/anchoranalysis/anchor-assembly-gpl -->
+	<!-- All the modules from https://github.com/anchoranalysis/anchor-launcher -->
 	<modules>
-	    <module>${path.anchor-assembly}/addplugins/anchor-launcher</module>
+	    <module>${path.anchor-launcher}/anchor-launcher</module>
     </modules>
 	
     
@@ -36,7 +36,7 @@
 					<source>21</source>
 					<detectJavaApiLink>true</detectJavaApiLink>
 					<noqualifier>org.anchoranalysis.*:java.lang:java.io</noqualifier>
-					<sourcepath>${source.path.anchor-assembly}</sourcepath>
+					<sourcepath>${source.path.anchor-launcher}</sourcepath>
 										
 				</configuration>
             <reportSets>
