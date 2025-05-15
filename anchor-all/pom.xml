@@ -13,7 +13,7 @@
     <artifactId>anchor-all</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-    <name>Anchor - merged Javadoc across key repositories. This documentation is a work-in-progress.</name>
+    <name>Anchor - merged Javadoc across all key repositories.</name>
 
 	
 	<!-- All the modules from https://github.com/anchoranalysis/anchor -->
